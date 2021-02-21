@@ -1,0 +1,49 @@
+.userTagsContainer {
+    border: 1px solid #eee;
+    border-bottom: 0;
+    color: grey;
+    padding: 20px;
+
+    h2 {
+        padding: 0 5px;
+    }
+    
+    .tagsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        div {
+            padding: 10px;
+            margin: 3px;
+            background-color: #f8f8f8;
+            &:nth-child(1) {
+                display: flex;
+                font-size: 1.5rem;
+                justify-content: space-between;
+                flex-basis: 100%;
+                > span {
+                    font-size: 1.5rem;
+                }
+            }
+            &:nth-child(n+2):nth-child(-n+3) {
+                display: flex;
+                font-size: 1.25rem;
+                justify-content: space-between;
+                flex-basis: 47%;
+                > span {
+                    font-size: 1.25rem;
+                }
+            }
+            &:nth-child(n+4):nth-last-child(-n+6) {
+                display: flex;
+                font-size: 1.12rem;
+                justify-content: space-between;
+                flex-basis: 30%;
+                > span {
+                    font-size: 1.12rem;
+                }
+            }
+        }
+    }
+}

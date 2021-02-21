@@ -1,0 +1,16 @@
+.tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+    max-height: 65px;
+    font-size: 1rem;
+    color: #848d95;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}

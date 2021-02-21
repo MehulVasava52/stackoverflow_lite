@@ -1,0 +1,117 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: grey;
+}
+.userProfile {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #eee;
+    background-color: #f2f2f291;
+    border-bottom: 0;
+    
+    .userProfileTitle {
+        padding: 0 12px;
+        font-size: 1.5rem;
+        h1 {
+            font-weight: 600;
+            margin: 0 0 25px;
+            color: #8e8c8c;
+        }
+    }
+    .userDetails {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .userAvatarContainer {
+            border: 1px solid #d4d1d1;
+            padding: 20px;
+            margin: 12px;
+            box-shadow: inset 0px 9em 0px 0px lightgrey;
+            font-size: 0.8rem;
+
+            .imgContainer {
+                min-height: 164px;
+                img {
+                    width: 164px;
+                }
+            }
+
+            .reputation {
+                margin-right: 10px;
+                font-size: 1.7rem;
+            }
+
+            .repoText {
+                color: grey;
+            }
+
+            .badgeContainer {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0px 0px;
+
+                .badge {
+                    padding: 0 8px 0 0;
+                    line-height: 1.5rem;
+                    flex-grow: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-right: 10px;
+                    border-radius: 5px;
+
+                    svg {
+                        font-size: 2rem;
+                    }
+
+                    &.goldBadge{
+                        border: 1px solid gold;
+                        background-color: rgb(255, 244, 209);
+                        svg{
+                            color: gold;
+                        }
+                    }
+                    &.silverBadge{
+                        border: 1px solid silver;
+                        background-color: rgb(232, 232, 232);
+                        svg {
+                            color: silver;
+                        }
+                    } 
+                    &.bronzeBadge {
+                        border: 1px solid rgb(171, 130, 95);
+                        background-color: rgb(242, 233, 225);
+                        svg {
+                            color: rgb(171, 130, 95);
+                        }
+                    } 
+                }
+            }
+        }
+
+        .userSummary {
+            width: 80%;
+            padding: 10px;
+            color: grey;
+            
+            svg {
+                margin-right: 8px;
+            }
+            
+            .userName {
+                font-size: 2rem;
+                font-weight: 600;
+                color: #000000ad;
+            }
+
+            .location,.websiteUrl {
+                display: flex;
+                align-items: center;
+                line-height: 2rem;
+            }
+        }
+    }
+}
